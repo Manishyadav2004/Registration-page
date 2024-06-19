@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="reg.css">
+    <script src="reg.js"></script>
+</head>
+<body>
+    <div class="jumbotron header text-center">
+        <h2>Registration Form</h2>
+    </div>
+    <div class="container">
+    <form class="form-horizontal" name="myForm" onsubmit="return validation()">
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="fname">First Name:</label>
+            <div class="col-sm-9">
+                <input type="text" id="firstName" name="firstName" class="form-control " />
+                <span id="fnmsg"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="name">Last Name:</label>
+            <div class="col-sm-9">
+                <input type="text" id="lastName" name="lastName" class="form-control" />
+                <span id="lnmsg"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="pwd"> Password :</label>
+            <div class="col-sm-9">
+                <input type="password" id="pwd"class="form-control"  />
+                <span id="pwdmsg"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="pwd">Confirm<br />Password :</label>
+            <div class="col-sm-9">
+                <input type="password" id="cpwd" class="form-control" />
+                <span id="cpwdmsg"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="Address"> Address :</label>
+            <div class="col-sm-9">
+                <textarea class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="Course"> Course :</label>
+            <div class="col-sm-9">
+                <div class="form-control">
+                    <input type="radio" name="Course" value="bca" checked> BCA
+                    <input type="radio" name="Course" value="bba"> BBA
+                    <input type="radio" name="Course" value="bcom"> B.com
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="Course"> Course :</label>
+            <div class="col-sm-9">
+                <div class="form-control">
+                    <input type="checkbox" name="chkmwr" value="on"> Making or watching reel
+                    <input type="checkbox" name="chkyt" value="on" checked> YouTube
+                    <input type="checkbox" name="chkpubg" value="on"> PUBG
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="state"> state :</label>
+            <div class="col-sm-9">
+                <div class="form-control">
+                    <select class="col-sm-12" id="selectAny">
+                        <option name="opt">-- Select state --</option>
+                        <option name="Mumbai">Mumbai</option>
+                        <option name="Gujarat">Gujarat</option>
+                        <option name="Rajasthan">Rajasthan</option>
+                        <option name="MP">Madhya pradesh</option>
+                        <option name="Goa">Goa</option>
+                        <option name="Dehli">Dehli</option>
+                    </select>
+                    <span id="samsg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="DOB">Date of Birth:</label>
+            <div class="col-sm-9">
+                <input type="date" id="DOB" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="email">Email :</label>
+            <div class="col-sm-9">
+                <input type="email" id="email" class="form-control" autocomplete="off" />
+                <span id="emailmsg"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="phno">Phone no. :</label>
+            <div class="col-sm-9">
+                <input type="phone" id="phno" class="form-control" maxlength="10" />
+                <span id="phmsg"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="file">Upload file :</label>
+            <div class="col-sm-9">
+                <input type="file" id="fileUpload" class="form-control" accept="image/*" />
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-8">
+            <div class="col-sm-4">
+                <button type="submit" class="btn btn-success" >Submit</button>
+            </div>
+            <div class="col-sm-4">
+                <button type="reset" class="btn btn-danger">Reset</button>
+            </div>
+        </div>
+    </form>
+</div>
+    <div class="container-fluid footer text-center" >
+        <h3>Made by Manish</h3>
+    </div>
+</body>
+
+</html>
